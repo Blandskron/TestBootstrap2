@@ -1,12 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <!-- Miguel crea un header con bootstrap -->
+
+    <!-- HERO (usa <picture> para cambiar entre los dos wireframes) -->
+    <header class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="hero-content">
+                        <h1 class="display-5 fw-bold">
+                        Título principal que llama la atención
+                        </h1>
+                        <p class="lead text-muted">Subtítulo descriptivo — aquí va una frase corta para explicar la
+                            propuesta de valor, igual que el wireframe.</p>
+                        <div class="d-flex gap-2">
+                            <a href="#" class="btn btn-primary btn-lg">Comenzar</a>
+                            <a href="#" class="btn btn-outline-secondary btn-lg">Ver demo</a>
+                        </div>
+                        <div class="mt-4 d-flex gap-3">
+                            <div class="text-center">
+                                <div class="fw-bold">+1.2k</div>
+                                <small class="text-muted">Usuarios</small>
+                            </div>
+                            <div class="text-center">
+                                <div class="fw-bold">4.8/5</div>
+                                <small class="text-muted">Calificación</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 mt-4 mt-lg-0">
+                    <!-- aquí usamos picture para mostrar el SVG de escritorio o la versión responsive según ancho -->
+                    <picture>
+                        <source media="(max-width: 767px)" srcset="responsive-home-wf.svg">
+                        <img src="https://gamingtrend.com/content/images/2025/02/daggerheart-news-1-1.jpg" alt="" class="hero-figure img-fluid shadow-sm">
+                    </picture>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
     <!-- Leandro crea un footer con bootstrap -->
 </body>
+
 </html>
